@@ -1,8 +1,4 @@
-// function refreshPage() {
-//   window.location.reload();
-//   history.replaceState({}, "", window.location.href + "?refresh=true");
-//   window.history.go(-1);
-// }
+// l-mode n-mode
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
 
@@ -15,6 +11,7 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "☀️";
   }
 });
+// buat kalo submit kerefresh
 window.addEventListener("pageshow", function (event) {
   if (
     event.persisted ||
